@@ -1,0 +1,112 @@
+.AllCouponsList {
+    background: linear-gradient(135deg, #ffe5f1, #ffdee9);
+    border: 4px solid #ff92b3;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.AllCouponsList select,
+.AllCouponsList input {
+    background: #fff0f5;
+    border: 2px solid #ff92b3;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    width: calc(100% - 24px);
+}
+
+.AllCouponsList select:hover,
+.AllCouponsList input:hover {
+    border-color: #ff478c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.AllCouponsList select:focus,
+.AllCouponsList input:focus {
+    border-color: #ff478c;
+    box-shadow: 0 0 8px #ff92b3;
+}
+
+.AllCouponsList label {
+    font-size: 1rem;
+    color: #ff478c;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.AllCouponsList .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.AllCouponsList .container span {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff478c;
+    font-weight: bold;
+}
+
+.AllCouponsList .coupon-item {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.AllCouponsList select option {
+    color: #333;
+    background-color: #fff0f5;
+}
+
+.AllCouponsList select option:hover {
+    background-color: #ffdee9;
+}
+
+.AllCouponsList select::-ms-expand {
+    display: none;
+}
+
+.AllCouponsList input::placeholder {
+    color: #ff92b3;
+    font-style: italic;
+}
+
+.AllCouponsList input[type="number"]::-webkit-inner-spin-button,
+.AllCouponsList input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.AllCouponsList input[type="number"] {
+    -moz-appearance: textfield; /* Remove spin button for Firefox */
+}
+
+/* Add hover animation for the component */
+.AllCouponsList:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Fade-in animation for coupons */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

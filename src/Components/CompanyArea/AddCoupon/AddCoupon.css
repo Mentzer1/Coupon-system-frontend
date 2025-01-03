@@ -1,0 +1,72 @@
+.AddCoupon {
+    background: linear-gradient(to bottom right, #ffe4f0, #ffccdd);
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 450px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.AddCoupon form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AddCoupon input, 
+.AddCoupon select {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff6ea1;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AddCoupon input:focus, 
+.AddCoupon select:focus {
+    border-color: #ff5290;
+    box-shadow: 0 0 5px #ff5290;
+}
+
+.AddCoupon input::placeholder {
+    color: #ff6ea1;
+    font-style: italic;
+}
+
+.AddCoupon select {
+    background-color: white;
+    color: #ff6ea1;
+    font-weight: bold;
+}
+
+.AddCoupon select option {
+    background-color: #ffe4f0;
+    color: #ff6ea1;
+}
+
+.AddCoupon button {
+    background-color: #ff6ea1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.AddCoupon button:hover {
+    background-color: #ff5290;
+    transform: translateY(-2px);
+}
+
+.AddCoupon button:active {
+    background-color: #ff397b;
+    transform: translateY(2px);
+}

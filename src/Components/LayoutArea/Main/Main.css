@@ -1,0 +1,9 @@
+.Main {
+    margin-top: 64px; /* Ensures content starts below the Header */
+    flex-grow: 1;
+    padding: 16px;
+    background-color: #f9f9f9;
+    height: calc(100vh - 64px); /* Prevents content overflow */
+    overflow-y: auto;
+  }
+  

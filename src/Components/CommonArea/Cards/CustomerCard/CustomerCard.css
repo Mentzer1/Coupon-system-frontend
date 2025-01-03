@@ -1,0 +1,59 @@
+.CustomerCard {
+    background: linear-gradient(to bottom right, #ffe4f0, #ffccdd);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.CustomerCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.CustomerCard p {
+    font-size: 1.1rem;
+    color: #ff6ea1;
+    margin-bottom: 16px;
+}
+
+.CustomerCard button {
+    background-color: #ff6ea1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.CustomerCard button:hover {
+    background-color: #ff5290;
+    transform: translateY(-2px);
+}
+
+.CustomerCard button:active {
+    background-color: #ff397b;
+    transform: translateY(2px);
+}
+
+.CustomerCard button:first-of-type {
+    background-color: #ff6ea1;
+}
+
+.CustomerCard button:last-of-type {
+    background-color: #ff92b5;
+}
+
+.CustomerCard button:last-of-type:hover {
+    background-color: #ff76a6;
+}
+
+.CustomerCard button:last-of-type:active {
+    background-color: #ff5d91;
+}

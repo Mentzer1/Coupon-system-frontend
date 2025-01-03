@@ -1,0 +1,70 @@
+.CompanyCouponsList {
+    background: linear-gradient(to bottom right, #ffe4f0, #ffccdd);
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.CompanyCouponsList button {
+    background-color: #ff6ea1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+.CompanyCouponsList button:hover {
+    background-color: #ff5290;
+    transform: translateY(-2px);
+}
+
+.CompanyCouponsList button:active {
+    background-color: #ff397b;
+    transform: translateY(2px);
+}
+
+.CompanyCouponsList select,
+.CompanyCouponsList input {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    border: 2px solid #ff6ea1;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.CompanyCouponsList select:focus,
+.CompanyCouponsList input:focus {
+    border-color: #ff5290;
+}
+
+.CompanyCouponsList label {
+    font-size: 1.1rem;
+    color: #ff6ea1;
+    margin-right: 10px;
+}
+
+.CompanyCouponsList .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.CompanyCouponsList .coupon-item {
+    width: 250px;
+    margin: 15px;
+    transition: transform 0.2s ease;
+}
+
+.CompanyCouponsList .coupon-item:hover {
+    transform: scale(1.05);
+}

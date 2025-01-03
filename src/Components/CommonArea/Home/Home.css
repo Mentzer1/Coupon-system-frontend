@@ -1,0 +1,16 @@
+.home-menu {
+    padding: 32px;
+  }
+  
+  .home-menu-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .home-menu-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
