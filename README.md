@@ -1,50 +1,104 @@
-# React + TypeScript + Vite
+# Coupon System Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Coupon System Frontend is a web application developed using React, TypeScript, and Vite. It serves as the user interface for the Coupon System, enabling companies to manage coupons and customers to view and redeem them. This frontend interacts seamlessly with the [Coupon System Backend](https://github.com/Mentzer1/Coupon-system-backend) to provide a cohesive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### Administrator Dashboard
+- Manage company profiles.
+- Create, update, and delete companies and customers.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Company Dashboard
+- Create, update, and delete coupons.
 
-- Configure the top-level `parserOptions` property like this:
+### Customer Interface
+- Browse available coupons.
+- Purchase coupons.
+- View purchase history.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Responsive Design
+- Optimized for various devices and screen sizes.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies Used
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Superset of JavaScript that adds static typing.
+- **Vite**: Next-generation frontend tooling for fast builds.
+- **ESLint**: Linting utility for maintaining code quality.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Getting Started
+
+### Prerequisites
+
+- **Node.js**: Ensure Node.js is installed on your system.
+- **npm or Yarn**: Package manager for installing dependencies.
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/Mentzer1/Coupon-system-frontend.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd Coupon-system-frontend
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+   or
+
+   ```bash
+   yarn install
+   ```
+
+4. **Configure environment variables**:
+   - Create a `.env` file in the root directory.
+   - Add the following variables:
+
+     ```env
+     VITE_BACKEND_URL=http://localhost:8080
+     ```
+
+     Replace `http://localhost:8080` with the actual URL of your backend service.
+
+5. **Run the application**:
+
+   ```bash
+   npm run dev
+   ```
+
+   or
+
+   ```bash
+   yarn dev
+   ```
+
+6. **Access the application**:
+   - Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+- **Company Users**:
+  - Log in to access the company dashboard.
+  - Manage coupons and view analytics.
+- **Customers**:
+  - Browse available coupons without logging in.
+  - Sign up or log in to redeem coupons and view your history.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+This project is built upon modern web development technologies to provide a fast and responsive user experience for managing and redeeming coupons.
